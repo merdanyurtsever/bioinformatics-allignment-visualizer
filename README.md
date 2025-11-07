@@ -114,11 +114,3 @@ Default scoring parameters:
 - Gap: -2
 
 These can be modified in `core/scoring.py`.
-
-## License
-
-This project is for educational purposes.
-
-## Author
-
-Created for bioinformatics sequence alignment visualization.
