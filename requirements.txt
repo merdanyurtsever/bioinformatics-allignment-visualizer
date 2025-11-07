@@ -1,2 +1,5 @@
 # Flask-based web GUI
 flask
+
+# For building standalone executable
+pyinstaller
