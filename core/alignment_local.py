@@ -31,6 +31,7 @@ class AlignmentLocal:
                     max_score = self.matrix[i][j]
                     max_pos = (i, j)
 
+        # Ensure max_pos is always set, even for empty sequences
         self.max_pos = max_pos
         return self.matrix
 
