@@ -1,0 +1,1 @@
+#metotlar: create_empty(rows: int, cols: int) -> list[list[int]], normalize(matrix) -> list[list[float]], pad_sequences(seqA, seqB) -> tuple[str, str]
