@@ -11,15 +11,20 @@ from gui.matrix_view import MatrixView
 class MainWindow:
     def __init__(self):
         self.root = None
-        self.seq_a_var = tk.StringVar(value="ACGTACGT")
-        self.seq_b_var = tk.StringVar(value="ACGACG")
-        self.algorithm_var = tk.StringVar(value="global")
+        self.seq_a_var = None
+        self.seq_b_var = None
+        self.algorithm_var = None
         self.matrix_view = None
 
     def build(self):
         self.root = tk.Tk()
         self.root.title("Bioinformatics Alignment Visualizer")
         self.root.geometry("1000x700")
+        
+        # Create StringVars after root window exists
+        self.seq_a_var = tk.StringVar(value="ACGTACGT")
+        self.seq_b_var = tk.StringVar(value="ACGACG")
+        self.algorithm_var = tk.StringVar(value="global")
 
         title = tk.Label(self.root, text="Sequence Alignment Tool", fg="#64C8FF", font=("Helvetica", 14, "bold"))
         title.pack(pady=8)
