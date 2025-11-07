@@ -1,12 +1,11 @@
 """Entry point for the application.
 
-This module starts the Tkinter-based GUI.
+This module starts the Flask-based web GUI.
 """
 
 def run():
-    from gui.main_window import MainWindow
-    window = MainWindow()
-    window.start()
+    from gui.web_server import start
+    start()
 
 
 if __name__ == "__main__":

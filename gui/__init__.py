@@ -1,9 +1,8 @@
-# GUI package exports (Tkinter-based)
+# GUI package exports (Flask web-based)
 
-from .main_window import MainWindow
-from .matrix_view import MatrixView
+from .web_server import app, start
 
 __all__ = [
-    "MainWindow",
-    "MatrixView",
+    "app",
+    "start",
 ]
